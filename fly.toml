@@ -12,7 +12,7 @@ primary_region = 'lax'
   release_command = '.fly/release.sh'
 
 [env]
-  DATABASE_URL = 'file://data/sqlite.db'
+  DATABASE_URL = 'postgresql://postgres:NZhCAEdhbbMEmyXdASyEIAFfSUMswFbO@postgres.railway.internal:5432/railway'
   MIGRATE_ON_BOOT = 'true'
   PORT = '8910'
   REDWOOD_DISABLE_TELEMETRY = '1'
