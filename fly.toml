@@ -13,13 +13,13 @@ primary_region = 'lax'
 
 [env]
   DATABASE_URL = 'postgresql://postgres:NZhCAEdhbbMEmyXdASyEIAFfSUMswFbO@postgres.railway.internal:5432/railway'
-  MIGRATE_ON_BOOT = 'true'
+  # MIGRATE_ON_BOOT = 'true'
   PORT = '8910'
   REDWOOD_DISABLE_TELEMETRY = '1'
 
-[[mounts]]
-  source = 'data'
-  destination = '/data'
+# [[mounts]]
+#   source = 'data'
+#   destination = '/data'
 
 [http_service]
   internal_port = 8910
