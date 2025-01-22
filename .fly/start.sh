@@ -10,5 +10,7 @@ fi
 ls -la /home/node/app/node_modules/.bin
 
 # Start both frontend and API servers using .bin
-node /home/node/app/node_modules/.bin/rw-serve-fe &
-node /home/node/app/node_modules/.bin/rw-server api
+# node /home/node/app/node_modules/.bin/rw-serve-fe &
+# node /home/node/app/node_modules/.bin/rw-server api
+
+node /home/node/app/node_modules/.bin/rw serve
