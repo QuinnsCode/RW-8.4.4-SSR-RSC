@@ -6435,6 +6435,7 @@ __metadata:
   resolution: "api@workspace:api"
   dependencies:
     "@redwoodjs/api": "npm:8.4.4"
+    "@redwoodjs/api-server": "npm:8.4.4"
     "@redwoodjs/graphql-server": "npm:8.4.4"
   languageName: unknown
   linkType: soft
