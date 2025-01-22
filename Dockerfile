@@ -18,11 +18,10 @@
     COPY --chown=node:node web/package.json web/
     COPY --chown=node:node yarn.lock .
 
-    RUN mkdir -p /home/node/.yarn/berry/index
+    # Removed the yarn berry-related setup
     RUN mkdir -p /home/node/.cache
 
-    RUN --mount=type=cache,target=/home/node/.yarn/berry/cache,uid=1000 \
-        --mount=type=cache,target=/home/node/.cache,uid=1000 \
+    RUN --mount=type=cache,target=/home/node/.cache,uid=1000 \
         CI=1 yarn install
 
     COPY --chown=node:node redwood.toml .
@@ -72,11 +71,10 @@
     COPY --chown=node:node web/package.json web/
     COPY --chown=node:node yarn.lock .
 
-    RUN mkdir -p /home/node/.yarn/berry/index
+    # Removed the yarn berry-related setup
     RUN mkdir -p /home/node/.cache
 
-    RUN --mount=type=cache,target=/home/node/.yarn/berry/cache,uid=1000 \
-        --mount=type=cache,target=/home/node/.cache,uid=1000 \
+    RUN --mount=type=cache,target=/home/node/.cache,uid=1000 \
         CI=1 yarn workspaces focus api web --production
 
     COPY --chown=node:node redwood.toml .
