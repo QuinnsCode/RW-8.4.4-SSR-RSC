@@ -13,4 +13,5 @@ ls -la /home/node/app/node_modules/.bin
 # node /home/node/app/node_modules/.bin/rw-serve-fe &
 # node /home/node/app/node_modules/.bin/rw-server api
 
-node /home/node/app/node_modules/.bin/rw serve
+node /home/node/app/node_modules/@redwoodjs/api-server/dist/index.js
+
