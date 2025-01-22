@@ -15,5 +15,11 @@ ls -la /home/node/app/node_modules/@redwoodjs/api-server/dist/
 # node /home/node/app/node_modules/.bin/rw-serve-fe &
 # node /home/node/app/node_modules/.bin/rw-server api
 
-node /home/node/app/node_modules/@redwoodjs/api-server/dist/index.js
+# node /home/node/app/node_modules/@redwoodjs/api-server/dist/index.js
 
+# Start the API server for production
+node /home/node/app/node_modules/@redwoodjs/api-server/dist/index.js api --port 8911 &
+
+# Start the web server
+# You might want to use a CDN or Nginx instead for production scale
+node /home/node/app/node_modules/@redwoodjs/api-server/dist/index.js web --port 8910
