@@ -15,6 +15,6 @@ LICENSE
 .vscode
 .editorconfig
 
-Dockerfile
+# Dockerfile
 docker-compose*
 .dockerignore

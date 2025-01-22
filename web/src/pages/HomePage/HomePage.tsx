@@ -101,7 +101,7 @@ const HomePage = () => {
       {/* <!-- Facebook Meta Tags --> */}
       <meta
         property="og:url"
-        content="https://e79c-107-143-98-212.ngrok-free.app/"
+        content="https://f08b-107-143-98-212.ngrok-free.app/"
       />
       <meta property="og:type" content="website" />
       <meta property="og:title" content="" />
